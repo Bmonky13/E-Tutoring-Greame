@@ -1,18 +1,512 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
+/* Tags */
 
 body {
-  margin-bottom: 60px;
+    background: rgb(255,255,255);
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+p {
+    color: rgb(36, 41, 47);
+    margin: 0;
+    padding: 13px 13px 0px 13px;
+}
+
+p, button, a {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    padding: 5px;
+    color: white;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Classes */
+
+#teach {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    margin-top: 13px;
+    padding: 5px 0 5px 0;
+}
+
+.in {
+    background-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(208, 215, 222);
+    border-radius: 6px;
+    border: 1px solid rgb(208, 215, 222);
+    box-shadow: rgba(208, 215, 222, 0.2) 0px 1px 0px 0px inset;
+    box-sizing: border-box;
+    color: rgb(36, 41, 47);
+    cursor: text;
+    font-size: 14px;
+    font-weight: 400;
+    height: 32px;
+    margin: 0px 0px 0px 0px;
+    outline-color: rgb(75, 219, 255);
+    outline-width: 1px;
+    padding: 5px 12px 5px 12px;
+}
+
+.slct {
+    background-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(208, 215, 222);
+    border-radius: 6px;
+    border: 1px solid rgb(208, 215, 222);
+    box-shadow: rgba(208, 215, 222, 0.2) 0px 1px 0px 0px inset;
+    box-sizing: border-box;
+    color: rgb(36, 41, 47);
+    cursor: text;
+    font-size: 14px;
+    font-weight: 400;
+    height: 32px;
+    margin: 0px 0px 0px 0px;
+    outline-color: rgb(75, 219, 255);
+    outline-width: 1px;
+    padding: 5px 12px 5px 12px;
+}
+
+.qst {
+    padding: 13px 13px 0px 13px;
+    margin: 0px;
+}
+
+.qstd {
+    position: relative;
+    background-color: rgb(246, 248, 250);
+    box-shadow: 0px 8px 16px 0px rgba(246, 248, 250, 0.2);
+    display: inline-block;
+    border: 1px solid rgb(216, 222, 228);
+    border-radius: 6px;
+    margin: 0px 0 0px 0;
+    padding: 0 0 13px 0;
+    width: 100%;
+}
+
+.b {
+    font-weight: 600;
+}
+
+.nb {
+    font-weight: 400;
+}
+
+.uns {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btngr {
+    background-color: rgb(41, 197, 86);
+    box-shadow: 0px 8px 16px 0px rgba(41, 197, 86, 0.2);
+    border: 1px solid rgba(50, 65, 48, 0.15);
+    color: white;
+    border-radius: 6px;
+    display: block;
+    margin: 5px 0 5px 0;
+    font-weight: 500;
+    padding-bottom: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.btnbl {
+    background-color: rgb(0, 195, 255);
+    box-shadow: 0px 8px 16px 0px rgba(41, 135, 197, 0.2);
+    border: 1px solid rgba(48, 57, 65, 0.15);
+    color: white;
+    border-radius: 6px;
+    display: block;
+    margin: 5px 0 5px 0;
+    font-weight: 500;
+    padding-bottom: 2.8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 2.8px;
+    width: 100%;
+}
+
+.btngry {
+    background-color: rgb(246, 248, 250);
+    box-shadow: 0px 8px 16px 0px rgba(246, 248, 250, 0.2);
+    border: 1px solid rgb(216, 222, 228);
+    color: rgb(128, 135, 143);
+    border-radius: 6px;
+    display: block;
+    margin: 5px 0 5px 0;
+    font-weight: 500;
+    padding-bottom: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.sbmt:hover {
+    background-color: rgb(39, 184, 80);
+}
+
+.head {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 195, 255);
+    box-shadow: 0px 8px 16px 0px rgba(0, 195, 255, 0.2);
+}
+
+.pcont {
+    padding: 13px 13px 0px 13px;
+}
+
+.pcont2 {
+    padding: 7px 13px 7px 13px;
+}
+
+.ynimg {
+    width: 12px;
+    height: auto;
+    padding: 0px 5px 0px 0px;
+}
+
+.flex {
+    display: flex;
+}
+
+.m {
+    margin-top: 10px;
+}
+
+.nws {
+    white-space: pre;
+}
+
+.flexchild {
+    width: 100%
+}
+
+.flexchildl {
+    margin-right: 5px;
+}
+
+.flexchildr {
+    margin-left: 5px;
+    width: 40%;
+}
+
+.flexchildl2 {
+    margin-right: 5px;
+    width: 200%;
+}
+
+.flexchildr2 {
+    margin-left: 5px;
+    width: 100%;
+}
+
+.l {
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.htitleparent {
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.hitem {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.hchild {
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0;
+}
+
+.hdark {
+    background: rgb(242, 243, 247);
+}
+
+.htitle {
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0;
+}
+
+.hflex0 {
+    width: 50%;
+}
+
+.hflex4 {
+    width: 100%;
+}
+
+.hflex1 {
+    width: 100%;
+}
+
+.hflex2 {
+    width: 300%;
+}
+
+.hflex3 {
+    width: 100%;
+}
+
+.navchild {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.grey {
+    color: rgb(121, 121, 121)
+}
+
+.grey2 {
+    color: rgb(201, 201, 201)
+}
+
+#nav1 {
+    margin-left: 0;
+}
+
+#nav9 {
+    margin-right: 0;
+}
+
+.nav {
+    margin-top: 10px;
+}
+
+.salin {
+    text-align: center;
+    padding-top: 0;
+}
+
+.salinp {
+    text-align: center;
+    padding-top: 13;
+}
+
+.sl1 {
+    display: inline;
+    width: 750%;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+#copy2pcont {
+    padding-top: 5px;
+}
+
+.copy {
+    margin: 0;
+}
+
+.sl2 {
+    display: inline;
+    width: auto;
+}
+
+#sldiv {
+    /* position: absolute;
+  bottom: calc(0); */
+}
+
+#sheetsp {
+    padding-top: 13px;
+}
+
+.sl {
+    margin: 0;
+}
+
+.pl0 {
+    padding-left: 0;
+}
+
+.csp {
+    padding-top: 5px;
+}
+
+.csc1 {
+    width: 100%;
+}
+
+.csc2 {
+    width: 100%;
+}
+
+.csc3 {
+    width: 100%;
+}
+
+.csc4 {
+    right: 0;
+}
+
+.cscc4 {
+    width: 100%;
+}
+
+.cscc {
+    display: inline;
+}
+
+#viewercontent {
+    width: 100%;
+}
+
+#userprompt {
+    margin: auto;
+    width: 30%;
+}
+
+#userpromptbtn {
+    width: 25%;
+    margin-left: 5px;
+    margin-right: 13px;
+}
+
+.up1 {
+    width: 40%;
+    margin: 5px 0 0 13px;
+    padding: 5px 0 0 0;
+}
+
+.up2 {
+    width: 40%;
+    margin: 5px 5px 0 5px;
+}
+
+.up3 {
+    width: 40%;
+    margin: 5px 13px 0 0;
+    padding: 0;
+}
+
+#slin {
+    background-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(208, 215, 222);
+    border-radius: 6px;
+    border: 1px solid rgb(208, 215, 222);
+    box-shadow: rgba(208, 215, 222, 0.2) 0px 1px 0px 0px inset;
+    box-sizing: border-box;
+    cursor: text;
+    height: 32px;
+    margin: 0px 0px 0px 0px;
+    outline-color: rgb(75, 219, 255);
+    outline-width: 1px;
+    padding: 5px 12px 5px 12px;
+}
+
+/* ID's */
+
+#content {
+    width: 75%;
+    margin: auto;
+}
+
+#score {
+    text-align: center;
+    padding-top: 0;
+}
+
+#levelnum {
+    text-align: center;
+    font-weight: 500;
+    font-size: 35px;
+    padding: 0;
+}
+
+#gtlvin {
+    display: inline-block;
+    width: 300%;
+    margin: 0px 8px 0 0;
+}
+
+#gtlvt {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 5px 5px 5px 0px;
+    padding: 0;
+}
+
+#gtlvb {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+}
+
+#gtlvs {
+    width: 100%;
+}
+
+#gtlv {
+    width: calc(100% - 26px);
+    position: absolute;
+    margin: 13px;
+    bottom: 0;
+}
+
+/* grd */
+
+#gtgrdin {
+    display: inline-block;
+    width: 300%;
+    margin: 0px 8px 0 0;
+}
+
+#gtgrdt {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 5px 5px 5px 0px;
+    padding: 0;
+}
+
+#gtgrdb {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+}
+
+#gtgrds {
+    width: 100%;
+}
+
+#gtgrd {
+    width: calc(100% - 26px);
+    position: absolute;
+    margin: 13px;
+    bottom: 60;
 }
