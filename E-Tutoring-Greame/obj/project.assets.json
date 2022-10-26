@@ -2454,19 +2454,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\n.smith22\\.nuget\\packages\\": {}
+    "C:\\Users\\m.north3\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\n.smith22\\Source\\Repos\\E-Tutoring-Greame\\E-Tutoring-Greame\\E-Tutoring-Greame.csproj",
+      "projectUniqueName": "C:\\Users\\m.north3\\Source\\Repos\\E-Tutoring-Greame\\E-Tutoring-Greame\\E-Tutoring-Greame.csproj",
       "projectName": "E-Tutoring-Greame",
-      "projectPath": "C:\\Users\\n.smith22\\Source\\Repos\\E-Tutoring-Greame\\E-Tutoring-Greame\\E-Tutoring-Greame.csproj",
-      "packagesPath": "C:\\Users\\n.smith22\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\n.smith22\\Source\\Repos\\E-Tutoring-Greame\\E-Tutoring-Greame\\obj\\",
+      "projectPath": "C:\\Users\\m.north3\\Source\\Repos\\E-Tutoring-Greame\\E-Tutoring-Greame\\E-Tutoring-Greame.csproj",
+      "packagesPath": "C:\\Users\\m.north3\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\m.north3\\Source\\Repos\\E-Tutoring-Greame\\E-Tutoring-Greame\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\n.smith22\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\m.north3\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
