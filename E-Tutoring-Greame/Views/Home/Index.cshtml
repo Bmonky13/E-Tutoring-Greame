@@ -1,4 +1,6 @@
-﻿@{
+﻿@model E_Tutoring_Greame.Models.LoginModel
+
+@{
     ViewData["Title"] = "Login Page";
 }
 
@@ -7,115 +9,16 @@
     <div id="userprompt">
       <div class="qstd m">
         <p>Enter a name to keep track of your progress!</p>
-        <div class="flex">
-          <p class = "qst up1">Username:</p>
-          <input class="in up2" type="text" id="userpromptinput">
-          <button class="btnbl up3" id="userpromptbtn">Go!</button>
-        </div>
+        <form asp-action="NextPage">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="flex">
+                <p class = "qst up1">Username:</p>
+                <input asp-for="Username" class="form-control" />
+                <input type="submit" value="Go!" class="btn btn-primary" />
+            </div>
+        </form>
       </div>
       <button id="teach" class="btnbl">I Am a Teacher</button>
-    </div>
-
-    <div id="content" style="display:none">
-      <div class="flex nav">
-        <button class="btngry navchild" id="nav1" grade="1">Grade 1</button>
-        <button class="btngry navchild" id="nav2" grade="2">Grade 2</button>
-        <button class="btnbl navchild" id="nav3" grade="3">Grade 3</button>
-        <button class="btngry navchild" id="nav4" grade="4">Grade 4</button>
-        <button class="btngry navchild" id="nav5" grade="5">Grade 5</button>
-        <button class="btngry navchild" id="nav6" grade="6">Grade 6</button>
-        <button class="btngry navchild" id="nav7" grade="7">Grade 7</button>
-        <button class="btngry navchild" id="nav8" grade="8">Grade 8</button>
-        <button class="btngry navchild" id="nav9" grade="9">Grade 9</button>
-      </div>
-
-      <div class="flex">
-        <div class="flexchildl2">
-          <div class = "flex">
-            <div id="mainqst" class="qstd m flexchildl">
-              <!-- <div class="pcont"> -->
-                <p>Answer enough questions correctly and proceed to the next level!</p>
-                <p>Round answers to the nearest tenth</p>
-              <!-- </div> -->
-            </div>
-
-            <div id="acc" class="qstd m flexchildr">
-              <p class="l">Level <br><span id="levelnum"></span></p>
-              <p class="b">Accuracy: <span class="nb" id="accuracy">0/0 (100%)</span></p>
-              <p class="b">Time: <span class="nb" id="time">0s</span></p>
-
-              <div id="gtlv">
-                <p id = "gtlvt" class="b">Set Level</p>
-                <div class = "flex" id="gtlvs">
-                <input class="in" id="gtlvin" type="number" min="0" max="7">
-                  <button class="btnbl" id="gtlvb">Go</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="qstd m">
-            <div class="pcont">
-              <button class="btngr" id="sbmt">Check Answers</button>
-              <button class="btnbl" id="stay" style="display: none">Stay At This Level</button>
-              <p id="score" class="b" style="display: none"></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="flexchildr2 m qstd">
-          <p class="l">History</p>
-          <div class = "flex hflex htitleparent">
-            <p class="b hflex0 htitle">#</p><p class="b hflex4 htitle">Grade</p><p class="b hflex1 htitle">Level</p><p class="b hflex2 htitle">Score</p><p class="b hflex3 htitle">Time</p>
-          </div>
-          <div id="history"></div>
-        </div>
-      </div>
-
-      <div id="sldivp">
-        <div class="qstd m" id="sldiv" style="display:none">
-          <div class="pcont">
-            <p class="sl1 sl pl0" id="copyt">Save Your Progress <span id="slin" class="grey">https://jsworksheet.ganiskowicz.repl.co/sheet?<span class="grey2">...</span></span></p>
-            <button class="btnbl sl2 copy" id="copy">Copy</button>
-          </div>
-          <div class="pcont" id="copy2pcont">
-            <p class="sl1 sl pl0" id="copy2t">Share Progress With Your Teacher <span id="slin" class="grey">https://jsworksheet.ganiskowicz.repl.co/view?<span class="grey2">...</span></span></p>
-            <button class="btnbl sl2 copy" id="copy2">Copy</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="qstd m" style="display:none">
-        <div class="pcont flex">
-          <p class="salin" class="b">Create Sheet</p>
-          <button class="btngr">Create Sheet</button>
-        </div>
-      </div>
-
-    </div>
-
-    <div id="assets" style="display: none">
-      <p class = "qst">
-        <img class="ynimg" style="display: none">
-        <span class="qn b">
-        <span class="n"></span>.
-        </span> 
-        <span class="expr uns"></span> = 
-        <input class="in" type="number">
-        <span class="crct"></span>
-      </p>
-
-      <div class = "flex hitem hflex">
-        <p class="b hflex0 hchild"><span class="b hpos">#</span></p>
-        <p class="b hflex4 hchild"><span class="nb hgrade">3</span></p>
-        <p class="b hflex1 hchild"><span class="nb hlevel">7</span></p>
-        <p class="b hflex2 hchild"><span class="nb hscore">0/0 (100%)</span></p>
-        <p class="b hflex3 hchild"><span class="nb htime">0s</span></p>
-        <span class="data" style="display:none"></span>
-      </div>
-
-      <img src="img/Check.png">
-      <img src="img/X.png">
     </div>
 
     <script src="lzstring.js"></script>

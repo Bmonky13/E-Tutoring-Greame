@@ -28,5 +28,17 @@ namespace E_Tutoring_Greame.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public IActionResult NextPage(LoginModel user)
+        {
+            if(user != null)
+            {
+                return View("Worksheet", user);
+            }
+            else
+            {
+                return View("Error", user);
+            }
+        }
     }
 }
