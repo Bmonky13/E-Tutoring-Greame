@@ -1,0 +1,7 @@
+﻿namespace E_Tutoring_Greame.Models
+{
+    public class LoginModel
+    {
+        public string Username { get; set; }
+    }
+}
