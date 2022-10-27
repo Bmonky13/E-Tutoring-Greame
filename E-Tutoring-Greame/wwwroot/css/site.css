@@ -145,7 +145,7 @@ button:hover {
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 2.8px;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .btngry {
@@ -161,7 +161,7 @@ button:hover {
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 5px;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .sbmt:hover {

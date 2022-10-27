@@ -180,9 +180,9 @@ function markQuestions() {
     let img = qst.getElementsByClassName("ynimg")[0]
     if (questions[i - 1] == el.value) {//Check to see if the asnwer to the question is equal to the value indexed in the dictionary.
       mark++
-      img.src = "img/Check.png"
+      img.src = "../Check.png"
     } else {
-      img.src = "img/X.png"
+      img.src = "../X.png"
       let crct = qst.getElementsByClassName("crct")[0]
       crct.innerHTML = `Answer: ${questions[i - 1]}` //Display correct answer
     }
