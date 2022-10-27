@@ -5,11 +5,12 @@
 }
 
 <body>
-    <div id="content" style="display:none">
-        <div class="flex nav">
-            <button class="btngry navchild" id="nav1" grade="1">Grade 1</button>
+    
+    <div id="content">
+        <div class="flex">
+            <button class="btnbl navchild" id="nav1" grade="1">Grade 1</button>
             <button class="btngry navchild" id="nav2" grade="2">Grade 2</button>
-            <button class="btnbl navchild" id="nav3" grade="3">Grade 3</button>
+            <button class="btngry navchild" id="nav3" grade="3">Grade 3</button>
             <button class="btngry navchild" id="nav4" grade="4">Grade 4</button>
             <button class="btngry navchild" id="nav5" grade="5">Grade 5</button>
             <button class="btngry navchild" id="nav6" grade="6">Grade 6</button>
@@ -22,10 +23,10 @@
             <div class="flexchildl2">
                 <div class="flex">
                     <div id="mainqst" class="qstd m flexchildl">
-                        <!-- <div class="pcont"> -->
+                        <div class="pcont">
                         <p>Answer enough questions correctly and proceed to the next level!</p>
                         <p>Round answers to the nearest tenth</p>
-                        <!-- </div> -->
+                        </div>
                     </div>
 
                     <div id="acc" class="qstd m flexchildr">
@@ -61,7 +62,7 @@
             </div>
         </div>
 
-        @*<div id="sldivp">
+        <div id="sldivp">
             <div class="qstd m" id="sldiv" style="display:none">
                 <div class="pcont">
                     <p class="sl1 sl pl0" id="copyt">Save Your Progress <span id="slin" class="grey">https://jsworksheet.ganiskowicz.repl.co/sheet?<span class="grey2">...</span></span></p>
@@ -72,11 +73,11 @@
                     <button class="btnbl sl2 copy" id="copy2">Copy</button>
                 </div>
             </div>
-        </div>*@
+        </div>
 
-        <div class="qstd m" style="display:none">
+        <div class="qstd m">
             <div class="pcont flex">
-                <p class="salin" class="b">Create Sheet</p>
+                <p class="salin b">Create Sheet</p>
                 <button class="btngr">Create Sheet</button>
             </div>
         </div>
@@ -102,12 +103,10 @@
             <p class="b hflex3 hchild"><span class="nb htime">0s</span></p>
             <span class="data" style="display:none"></span>
         </div>
-
-        <img src="img/Check.png">
-        <img src="img/X.png">
+        <img src="~/Check.png">
+        <img src="~/X.png">
     </div>
-
-    <!--<script src="lzstring.js"></script>
-    <script src="main.js"></script> 
-    <script src="index.js"></script>-->
+    <script src="~/js/lzstring.js"></script>
+    <script src="~/js/main.js"></script>
+    <script src="~/js/index.js "></script>
 </body>
