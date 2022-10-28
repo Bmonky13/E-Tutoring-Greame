@@ -34,7 +34,7 @@ let timeNum = 0
 
 let startdifficulty = 2;
 let difficulty = 2;
-let grade = 3;
+let grade = 1;
 let allowedLayers = 0;
 let minLayers = 0
 let maxLayers = 3
