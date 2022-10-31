@@ -95,7 +95,7 @@ button:hover {
     border: 1px solid rgb(216, 222, 228);
     border-radius: 6px;
     margin: 0px 0 0px 0;
-    padding: 0 0 13px 0;
+    padding: 15px 15px 15px 15px;
     width: 100%;
 }
 
@@ -114,6 +114,25 @@ button:hover {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.btn-primary {
+    background-color: rgb(153, 102, 255);
+    box-shadow: 0px 8px 16px 0px rgba(41, 135, 197, 0.2);
+    border: 1px solid rgba(48, 57, 65, 0.15);
+    color: white;
+    border-radius: 6px;
+    display: block;
+    margin: 5px 0 5px 0;
+    font-weight: 500;
+    padding-bottom: 2.8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 2.8px;
+}
+
+.btn-primary:hover {
+    background-color: rgb(118, 68, 212);
 }
 
 .btngr {
@@ -222,6 +241,11 @@ button:hover {
 .flexchildr2 {
     margin-left: 5px;
     width: 100%;
+}
+
+.form-control {
+    width: 94%;
+    margin: auto;
 }
 
 .l {
