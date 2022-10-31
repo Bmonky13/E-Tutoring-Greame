@@ -48,17 +48,6 @@ button:hover {
     width: 90%;
 }
 
-.btn-primary {
-    background-color: mediumpurple;
-    width: 90%;
-    margin-top: 12px;
-    border-color: mediumpurple;
-}
-.btn-primary: hover {
-    background-color: mediumpurple;
-    border-color: mediumpurple;
-}
-
 #teach {
     text-align: center;
     margin: auto;
@@ -139,22 +128,24 @@ button:hover {
 
 .btn-primary {
     background-color: rgb(153, 102, 255);
-    box-shadow: 0px 8px 16px 0px rgba(41, 135, 197, 0.2);
+    //box-shadow: 0px 8px 16px 0px rgba(41, 135, 197, 0.2);
     border: 1px solid rgba(48, 57, 65, 0.15);
     color: white;
     border-radius: 6px;
     display: block;
-    margin: 5px 0 5px 0;
     font-weight: 500;
     padding-bottom: 2.8px;
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 2.8px;
+    width: 93.5%;
+    margin-top: 20px;
 }
 
-.btn-primary:hover {
-    background-color: rgb(118, 68, 212);
-}
+    .btn-primary:hover {
+        background-color: rgb(118, 68, 212);
+        bordrer-color: rgb(118, 68, 212);
+    }
 
 .btngr {
     background-color: rgb(41, 197, 86);
