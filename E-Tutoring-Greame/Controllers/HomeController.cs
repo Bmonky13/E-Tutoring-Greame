@@ -1,4 +1,5 @@
 ﻿using E_Tutoring_Greame.Models;
+using E_Tutoring_Greame.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -39,6 +40,13 @@ namespace E_Tutoring_Greame.Controllers
             {
                 return View("Error", user);
             }
+        }
+
+        public IActionResult SubmitForm(LoginModel loginModel)
+        {
+            NumberGenerator numberGenerator = new NumberGenerator();
+            return View("Worksheet", loginModel);
+
         }
     }
 }
