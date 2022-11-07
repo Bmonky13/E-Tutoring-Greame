@@ -32,8 +32,12 @@ namespace E_Tutoring_Greame.SQL_C_Sharp
     
     public class SQL
     {
+        public void veiwSignUp()
+        {
 
-            String connString = @"Host=db.bit.io,5432;Username=Bmonky13;Password=v2_3uK8C_jArJzeSymZ9haEmzqwgLusg;Database=Bmonky13.Classified";
+        }
+
+        String connString = @"Host=db.bit.io,5432;Username=Bmonky13;Password=v2_3uK8C_jArJzeSymZ9haEmzqwgLusg;Database=Bmonky13.Classified";
 
             public bool FindUserByNameAndPassword(LoginModel user)
             {

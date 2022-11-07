@@ -17,20 +17,7 @@ namespace E_Tutoring_Greame.Controllers
             return View();
         }
 
+
         
-
-        /*public IActionResult CreateUser(LoginModel userModel)
-        {
-            Security_Services securityService = new Security_Services();
-
-            if (securityService.UniqueUser(userModel))
-            {
-                return View("Profile", userModel);
-            }
-            else
-            {
-                return PartialView("UsernameTaken", userModel);
-            }
-        }*/
     }
 }

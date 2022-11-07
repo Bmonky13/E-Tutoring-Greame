@@ -1,7 +1,9 @@
 ﻿@model E_Tutoring_Greame.Models.LoginModel
 @using static E_Tutoring_Greame.SQL_C_Sharp.SQL
 
-
+@{
+    ViewData["Title"] = "Login";
+}
 
 <link rel="stylesheet" href="~/css/site.css" />
 
@@ -20,12 +22,19 @@
                     <p class="qst up1">Password:</p>
                     <input asp-for="Password" class="form-control pass-input" />
 
-                        <center><input type="submit" value="Go!" class="btn btnprimary" onclick=""/></center>
+                        <center><input type="submit" value="Go!" class="btn btnprimary"/></center>
                 </div>
         </form>
-      </div>
-      <button id="teach" class="btnbl">I Am a Teacher</button>
-    </div>
+        </div>
+        <form asp-area="" asp-controller="Home" asp-action="SignUp">
+            <div>
+                <input type="submit" value="Sign Up!" id="signUp" class="btn btnprimary" />
+            </div>
+        </form>
+       
+@*
+        <button id="signUp" class="btnbl" onclick="SignUpButton_Click()" value="Sign up!" type="submit" asp-area="" asp-controller="Home" asp-action="SignUp" />
+   *@ </div>
 
     <script src="~/js/lzstring.js"></script>
     <script src="~/js/main.js"></script>

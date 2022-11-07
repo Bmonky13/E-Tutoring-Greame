@@ -18,7 +18,7 @@ namespace E_Tutoring_Greame.Controllers
         {
             return View();
         }
-
+        
         public IActionResult Privacy()
         {
             return View();
@@ -55,6 +55,25 @@ namespace E_Tutoring_Greame.Controllers
                 return PartialView("InvalidCredentials", userModel);
             }
 
+        }
+
+        public IActionResult SignUp()
+        {
+            return View();
+        }
+
+        public IActionResult CreateUser(LoginModel userModel)
+        {
+            Security_Services securityService = new Security_Services();
+
+            if (securityService.UniqueUser(userModel))
+            {
+                return View("Worksheet", userModel);
+            }
+            else
+            {
+                return PartialView("UsernameTaken", userModel);
+            }
         }
     }
 }

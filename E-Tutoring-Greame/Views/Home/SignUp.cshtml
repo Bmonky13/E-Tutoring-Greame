@@ -1,0 +1,37 @@
+﻿@model E_Tutoring_Greame.Models.LoginModel
+@using static E_Tutoring_Greame.SQL_C_Sharp.SQL
+
+@{
+    ViewData["Title"] = "Sign Up";
+}
+
+<link rel="stylesheet" href="~/css/site.css" />
+
+<body>
+
+    <div id="userprompt">
+
+        <div class="qstd m">
+            <p>Sign Up</p>
+            <form asp-action="CreateUser">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="fixed">
+                    <p class="qst up1">Username:</p>
+                    <input asp-for="Username" class="form-control user-input" />
+
+                    <p class="qst up1">Password:</p>
+                    <input asp-for="Password" class="form-control pass-input" />
+
+                    <center><input type="submit" value="Sign up" class="btn btnprimary" /></center>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="~/js/lzstring.js"></script>
+    <script src="~/js/main.js"></script>
+    <script src="~/js/index.js"></script>
+
+</body>
+
+

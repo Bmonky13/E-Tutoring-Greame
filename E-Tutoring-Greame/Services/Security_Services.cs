@@ -11,9 +11,9 @@ namespace E_Tutoring_Greame.Services
             return SQL.FindUserByNameAndPassword(user);
         }
 
-        /*public bool UniqueUser(LoginModel user)
+        public bool UniqueUser(LoginModel user)
         {
             return SQL.AddUserToDatabase(user);
-        }*/
+        }
     }
 }
