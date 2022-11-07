@@ -138,12 +138,14 @@ button:hover {
     padding-top: 2.8px;
     width: 93.5%;
     margin-top: 20px;
+    margin-bottom: 7px;
 }
 
-    .btnprimary:hover {
-        background-color: rgb(118, 68, 212);
-        border-color: rgb(118, 68, 212);
-    }
+.btnprimary:hover {
+    background-color: rgb(118, 68, 212);
+    border-color: rgb(118, 68, 212);
+    color:white;
+}
 
 .btngr {
     background-color: rgb(41, 197, 86);
@@ -175,6 +177,12 @@ button:hover {
     padding-right: 16px;
     padding-top: 2.8px;
     /*width: 100%;*/
+}
+
+.btnbl:hover {
+    background-color: rgb(118, 68, 212);
+    border-color: rgb(118, 68, 212);
+    color: white;
 }
 
 .btngry {

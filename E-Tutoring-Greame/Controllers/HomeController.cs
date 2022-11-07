@@ -1,4 +1,5 @@
 ﻿using E_Tutoring_Greame.Models;
+using E_Tutoring_Greame.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -37,8 +38,23 @@ namespace E_Tutoring_Greame.Controllers
             }
             else
             {
-                return View("Error", user);
+                return PartialView("InvalidCredentials", user);
             }
+        }
+
+        public IActionResult ProcessLogin(LoginModel userModel)
+        {
+            Security_Services securityService = new Security_Services();
+
+            if (securityService.IsValid(userModel))
+            {
+                return View("Worksheet", userModel);
+            }
+            else
+            {
+                return PartialView("InvalidCredentials", userModel);
+            }
+
         }
     }
 }
