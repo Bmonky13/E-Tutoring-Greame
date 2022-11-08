@@ -48,7 +48,7 @@ button:hover {
     width: 90%;
 }
 
-#teach {
+#signUp {
     text-align: center;
     margin: auto;
     width: 100%;
@@ -120,15 +120,13 @@ button:hover {
 .uns {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
 
-.btn-primary {
+.btnprimary {
     background-color: rgb(153, 102, 255);
-    //box-shadow: 0px 8px 16px 0px rgba(41, 135, 197, 0.2);
     border: 1px solid rgba(48, 57, 65, 0.15);
     color: white;
     border-radius: 6px;
@@ -140,12 +138,14 @@ button:hover {
     padding-top: 2.8px;
     width: 93.5%;
     margin-top: 20px;
+    margin-bottom: 7px;
 }
 
-    .btn-primary:hover {
-        background-color: rgb(118, 68, 212);
-        bordrer-color: rgb(118, 68, 212);
-    }
+.btnprimary:hover {
+    background-color: rgb(118, 68, 212);
+    border-color: rgb(118, 68, 212);
+    color:white;
+}
 
 .btngr {
     background-color: rgb(41, 197, 86);
@@ -177,6 +177,12 @@ button:hover {
     padding-right: 16px;
     padding-top: 2.8px;
     /*width: 100%;*/
+}
+
+.btnbl:hover {
+    background-color: rgb(118, 68, 212);
+    border-color: rgb(118, 68, 212);
+    color: white;
 }
 
 .btngry {
@@ -349,7 +355,7 @@ button:hover {
 
 .salinp {
     text-align: center;
-    padding-top: 13;
+    padding-top: 13px;
 }
 
 .sl1 {
@@ -492,8 +498,8 @@ button:hover {
 
 #gtlvin {
     display: inline-block;
-    width: 300%;
-    margin: 0px 8px 0 0;
+    width: 100%;
+    margin-bottom: 8px;
 }
 
 #gtlvt {
@@ -505,7 +511,7 @@ button:hover {
 }
 
 #gtlvb {
-    display: inline-block;
+    display: block;
     width: 100%;
     margin: 0;
 }
@@ -515,14 +521,15 @@ button:hover {
 }
 
 #gtlv {
-    width: calc(100% - 26px);
+    width: 100%;
     position: absolute;
-    margin: 13px;
+    left: 0px;
+    height: 146px;
     bottom: 0;
+    padding: 20px;
 }
 
 /* grd */
-
 #gtgrdin {
     display: inline-block;
     width: 300%;
@@ -551,5 +558,5 @@ button:hover {
     width: calc(100% - 26px);
     position: absolute;
     margin: 13px;
-    bottom: 60;
+    bottom: 60px;
 }
