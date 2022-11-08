@@ -498,8 +498,8 @@ button:hover {
 
 #gtlvin {
     display: inline-block;
-    width: 300%;
-    margin: 0px 8px 0 0;
+    width: 100%;
+    margin-bottom: 8px;
 }
 
 #gtlvt {
@@ -511,7 +511,7 @@ button:hover {
 }
 
 #gtlvb {
-    display: inline-block;
+    display: block;
     width: 100%;
     margin: 0;
 }
@@ -521,14 +521,15 @@ button:hover {
 }
 
 #gtlv {
-    width: calc(100% - 26px);
+    width: 100%;
     position: absolute;
-    margin: 13px;
+    left: 0px;
+    height: 146px;
     bottom: 0;
+    padding: 20px;
 }
 
 /* grd */
-
 #gtgrdin {
     display: inline-block;
     width: 300%;
