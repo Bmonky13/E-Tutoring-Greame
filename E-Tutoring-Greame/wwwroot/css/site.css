@@ -33,7 +33,7 @@ div {
 }
 
 button:hover {
-    cursor: pointer;
+    cursor: grabbing;
 }
 
 /* Classes */

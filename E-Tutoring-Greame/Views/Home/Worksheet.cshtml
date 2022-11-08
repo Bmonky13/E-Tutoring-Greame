@@ -24,12 +24,22 @@
         <div class="flex">
             <div class="flexchildl2">
                 <div class="flex">
-                    <div id="mainqst" class="qstd m flexchildl">
-                        <div class="pcont">
-                        <p>Answer enough questions correctly and proceed to the next level!</p>
-                        <p>Round answers to the nearest tenth</p>
+                    <form asp-action="SubmitForm" method="post">
+                        <div id="mainqst" class="qstd m flexchildl">
+                            <div class="pcont">
+                            <p>Answer enough questions correctly and proceed to the next level!</p>
+                            <p>Round answers to the nearest tenth</p>
+                            </div>
                         </div>
-                    </div>
+                        <div class="qstd m">
+                            <div class="pcont">
+                                <input type="submit" value="Check Answers" class="btngr" id="sbmt" />
+                                @*<button class="btnbl" id="stay" style="display: none">Stay At This Level</button>*@
+                                <p id="score" class="b" style="display: none"></p>
+                            </div>
+                        </div>
+                    </form>
+
 
                     <div id="acc" class="qstd m flexchildr">
                         <p class="l">Level <br><span id="levelnum"></span></p>
@@ -46,13 +56,7 @@
                     </div>
                 </div>
 
-                <div class="qstd m">
-                    <div class="pcont">
-                        <button class="btngr" id="sbmt">Check Answers</button>
-                        <button class="btnbl" id="stay" style="display: none">Stay At This Level</button>
-                        <p id="score" class="b" style="display: none"></p>
-                    </div>
-                </div>
+                
             </div>
 
             <div class="flexchildr2 m qstd">
@@ -77,25 +81,27 @@
             </div>
         </div>
 
-        <div class="qstd m">
+        @*<div class="qstd m">
             <div class="pcont flex">
                 <p class="salin b">Create Sheet</p>
                 <button class="btngr">Create Sheet</button>
             </div>
-        </div>
+        </div>*@
 
     </div>
 
     <div id="assets" style="display: none">
-        <p class="qst">
-            <img class="ynimg" style="display: none">
-            <span class="qn b">
-                <span class="n"></span>.
-            </span>
-            <span class="expr uns"></span> =
-            <input class="in" type="number">
-            <span class="crct"></span>
-        </p>
+        @*<form >*@
+            <p class="qst">
+                <img class="ynimg" style="display: none">
+                <span class="qn b">
+                    <span class="n"></span>.
+                </span>
+                <span class="expr uns"></span> =
+                <input class="in" type="text">
+                <span class="crct"></span>
+            </p>
+        @*</form>*@
 
         <div class="flex hitem hflex">
             <p class="b hflex0 hchild"><span class="b hpos">#</span></p>

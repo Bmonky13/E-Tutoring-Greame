@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\n.smith22\\Source\\Repos\\git\\E-Tutoring-Greame\\E-Tutoring-Greame.csproj": {}
+    "C:\\Users\\n.smith22\\Source\\Repos\\try2\\E-Tutoring-Greame\\E-Tutoring-Greame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\n.smith22\\Source\\Repos\\git\\E-Tutoring-Greame\\E-Tutoring-Greame.csproj": {
+    "C:\\Users\\n.smith22\\Source\\Repos\\try2\\E-Tutoring-Greame\\E-Tutoring-Greame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\n.smith22\\Source\\Repos\\git\\E-Tutoring-Greame\\E-Tutoring-Greame.csproj",
+        "projectUniqueName": "C:\\Users\\n.smith22\\Source\\Repos\\try2\\E-Tutoring-Greame\\E-Tutoring-Greame.csproj",
         "projectName": "E-Tutoring-Greame",
-        "projectPath": "C:\\Users\\n.smith22\\Source\\Repos\\git\\E-Tutoring-Greame\\E-Tutoring-Greame.csproj",
+        "projectPath": "C:\\Users\\n.smith22\\Source\\Repos\\try2\\E-Tutoring-Greame\\E-Tutoring-Greame.csproj",
         "packagesPath": "C:\\Users\\n.smith22\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\n.smith22\\Source\\Repos\\git\\E-Tutoring-Greame\\obj\\",
+        "outputPath": "C:\\Users\\n.smith22\\Source\\Repos\\try2\\E-Tutoring-Greame\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\n.smith22\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,6 +59,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[6.0.9, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[6.0.7, )"
             }
           },
           "imports": [

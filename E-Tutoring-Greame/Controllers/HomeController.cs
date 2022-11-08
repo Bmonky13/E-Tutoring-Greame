@@ -75,5 +75,12 @@ namespace E_Tutoring_Greame.Controllers
                 return PartialView("UsernameTaken", userModel);
             }
         }
+
+        public IActionResult SubmitForm(LoginModel loginModel)
+        {
+            NumberGenerator numberGenerator = new NumberGenerator();
+            return View("Worksheet", loginModel);
+
+        }
     }
 }
