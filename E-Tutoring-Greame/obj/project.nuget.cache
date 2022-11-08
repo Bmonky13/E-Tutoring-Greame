@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LotlcBy5vhsWRZAmrBJ1K94UjW1501irV7+peOnj6hJTjO7MKdMtvOqQ3KjovlimmSOks4ksI6/7VHTxAusqaA==",
+  "dgSpecHash": "cFXmGkT17YnjluAKhHpaJSJT5Qg0oWT3K2EnMDf/PCkph5ooazbeD78JYwxfV8LRjdBFz9XfvKaWA7qwBbkjvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\n.smith22\\source\\repos\\master\\E-Tutoring-Greame\\E-Tutoring-Greame.csproj",
+  "projectFilePath": "C:\\Users\\n.smith22\\Source\\Repos\\try2\\E-Tutoring-Greame\\E-Tutoring-Greame.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\n.smith22\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\n.smith22\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.9\\microsoft.aspnetcore.cryptography.internal.6.0.9.nupkg.sha512",
@@ -42,6 +42,7 @@
     "C:\\Users\\n.smith22\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\n.smith22\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\n.smith22\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\n.smith22\\.nuget\\packages\\npgsql\\6.0.7\\npgsql.6.0.7.nupkg.sha512",
     "C:\\Users\\n.smith22\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\n.smith22\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\n.smith22\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",

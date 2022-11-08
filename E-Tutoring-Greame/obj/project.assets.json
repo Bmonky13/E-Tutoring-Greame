@@ -674,6 +674,22 @@
           }
         }
       },
+      "Npgsql/6.0.7": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Collections.Immutable/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -1959,6 +1975,29 @@
         "version.txt"
       ]
     },
+    "Npgsql/6.0.7": {
+      "sha512": "HhD5q/VUJY++tCzc0eCrhtsxmUdP7NxNhUMOdYW6sqpC6NRlFLvUDf5JyRj0gOGkXe3Tn49toaisgvLqlzQ2JQ==",
+      "type": "package",
+      "path": "npgsql/6.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net5.0/Npgsql.dll",
+        "lib/net5.0/Npgsql.xml",
+        "lib/net6.0/Npgsql.dll",
+        "lib/net6.0/Npgsql.xml",
+        "lib/netcoreapp3.1/Npgsql.dll",
+        "lib/netcoreapp3.1/Npgsql.xml",
+        "lib/netstandard2.0/Npgsql.dll",
+        "lib/netstandard2.0/Npgsql.xml",
+        "lib/netstandard2.1/Npgsql.dll",
+        "lib/netstandard2.1/Npgsql.xml",
+        "npgsql.6.0.7.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
+      ]
+    },
     "System.Collections.Immutable/6.0.0": {
       "sha512": "l4zZJ1WU2hqpQQHXz1rvC3etVZN+2DLmQMO79FhOTZHMn8tDRr+WU287sbomD0BETlmKDn0ygUgVy9k5xkkJdA==",
       "type": "package",
@@ -2450,7 +2489,8 @@
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.9",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.9",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.9",
-      "Microsoft.EntityFrameworkCore.Tools >= 6.0.9"
+      "Microsoft.EntityFrameworkCore.Tools >= 6.0.9",
+      "Npgsql >= 6.0.7"
     ]
   },
   "packageFolders": {
@@ -2459,11 +2499,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\n.smith22\\Source\\Repos\\master\\E-Tutoring-Greame\\E-Tutoring-Greame.csproj",
+      "projectUniqueName": "C:\\Users\\n.smith22\\Source\\Repos\\try2\\E-Tutoring-Greame\\E-Tutoring-Greame.csproj",
       "projectName": "E-Tutoring-Greame",
-      "projectPath": "C:\\Users\\n.smith22\\Source\\Repos\\master\\E-Tutoring-Greame\\E-Tutoring-Greame.csproj",
+      "projectPath": "C:\\Users\\n.smith22\\Source\\Repos\\try2\\E-Tutoring-Greame\\E-Tutoring-Greame.csproj",
       "packagesPath": "C:\\Users\\n.smith22\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\n.smith22\\Source\\Repos\\master\\E-Tutoring-Greame\\obj\\",
+      "outputPath": "C:\\Users\\n.smith22\\Source\\Repos\\try2\\E-Tutoring-Greame\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\n.smith22\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2511,6 +2551,10 @@
           "Microsoft.EntityFrameworkCore.Tools": {
             "target": "Package",
             "version": "[6.0.9, )"
+          },
+          "Npgsql": {
+            "target": "Package",
+            "version": "[6.0.7, )"
           }
         },
         "imports": [
