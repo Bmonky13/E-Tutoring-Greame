@@ -529,6 +529,10 @@ button:hover {
     padding: 20px;
 }
 
+#InvalidCredentials{
+    color: red;
+}
+
 /* grd */
 #gtgrdin {
     display: inline-block;

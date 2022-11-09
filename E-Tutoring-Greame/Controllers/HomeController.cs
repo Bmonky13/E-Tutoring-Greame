@@ -3,6 +3,7 @@ using E_Tutoring_Greame.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
+
 namespace E_Tutoring_Greame.Controllers
 {
     public class HomeController : Controller
@@ -38,7 +39,7 @@ namespace E_Tutoring_Greame.Controllers
             }
             else
             {
-                return PartialView("InvalidCredentials", user);
+                return PartialView();
             }
         }
 
@@ -52,11 +53,11 @@ namespace E_Tutoring_Greame.Controllers
             }
             else
             {
-                return PartialView("InvalidCredentials", userModel);
+                return View("InvalidCredentials");
             }
 
         }
-
+       
         public IActionResult SignUp()
         {
             return View();
@@ -72,7 +73,7 @@ namespace E_Tutoring_Greame.Controllers
             }
             else
             {
-                return PartialView("UsernameTaken", userModel);
+                return PartialView("Error", userModel);
             }
         }
     }

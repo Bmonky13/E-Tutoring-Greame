@@ -17,6 +17,7 @@ using System.Xml.Linq;
 using FormEncode.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Windows;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
@@ -80,6 +81,8 @@ namespace E_Tutoring_Greame.SQL_C_Sharp
                 }
             }*/
 
+        
+
             public bool CheckUniqueUser(LoginModel user)
             {
                 bool success = false;
@@ -119,6 +122,8 @@ namespace E_Tutoring_Greame.SQL_C_Sharp
                 }
                 return success;
             }
+            
+          
 
             public bool AddUserToDatabase(LoginModel user)
             {
@@ -128,7 +133,7 @@ namespace E_Tutoring_Greame.SQL_C_Sharp
                 using (NpgsqlConnection conn = new NpgsqlConnection(connString))
                 {
 
-                    if (CheckUniqueUser(user))
+                    if ((CheckUniqueUser(user)) && (user.PasswordCheck == user.Password))
                     {
                         NpgsqlCommand cmd = new NpgsqlCommand(sqlStatement, conn);
                         cmd.Parameters.Add("@username", NpgsqlTypes.NpgsqlDbType.Varchar, 255).Value = user.Username;
@@ -145,6 +150,10 @@ namespace E_Tutoring_Greame.SQL_C_Sharp
                             Console.WriteLine(e.Message);
                         }
                         success = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Passwords do not match.");
                     }
                 }
                 return success;

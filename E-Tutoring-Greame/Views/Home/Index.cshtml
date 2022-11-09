@@ -13,6 +13,7 @@
 
       <div class="qstd m">
         <p>Login</p>
+
             <form asp-action="ProcessLogin">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="fixed">
@@ -20,7 +21,7 @@
                     <input asp-for="Username" class="form-control user-input" />
 
                     <p class="qst up1">Password:</p>
-                    <input asp-for="Password" class="form-control pass-input" />
+                    <input asp-for="Password" type="password" class="form-control pass-input" />
 
                         <center><input type="submit" value="Go!" class="btn btnprimary"/></center>
                 </div>
