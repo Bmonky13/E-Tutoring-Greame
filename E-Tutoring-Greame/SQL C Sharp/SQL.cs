@@ -184,5 +184,18 @@ namespace E_Tutoring_Greame.SQL_C_Sharp
                 }
                 return ID;
             }
+
+            public bool CheckPasswords(LoginModel user)
+            {
+                if(user.Password == user.PasswordCheck)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;  
+                }
+            }
+
         }
 }

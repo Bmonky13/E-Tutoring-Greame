@@ -1,13 +1,17 @@
 ﻿using E_Tutoring_Greame.Models;
 using E_Tutoring_Greame.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Diagnostics;
 
 
 namespace E_Tutoring_Greame.Controllers
 {
     public class HomeController : Controller
+       
+
     {
+
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -19,7 +23,7 @@ namespace E_Tutoring_Greame.Controllers
         {
             return View();
         }
-        
+
         public IActionResult Privacy()
         {
             return View();
@@ -33,7 +37,7 @@ namespace E_Tutoring_Greame.Controllers
 
         public IActionResult NextPage(LoginModel user)
         {
-            if(user != null)
+            if (user != null)
             {
                 return View("Worksheet", user);
             }
@@ -53,11 +57,11 @@ namespace E_Tutoring_Greame.Controllers
             }
             else
             {
-                return View("InvalidCredentials");
+                return PartialView("InvalidCredentials", userModel);
             }
 
         }
-       
+
         public IActionResult SignUp()
         {
             return View();
@@ -67,13 +71,17 @@ namespace E_Tutoring_Greame.Controllers
         {
             Security_Services securityService = new Security_Services();
 
-            if (securityService.UniqueUser(userModel))
+            if (securityService.UniqueUser(userModel) && securityService.PasswordMatch(userModel))
             {
                 return View("Worksheet", userModel);
             }
+            else if (securityService.PasswordMatch(userModel) == false)
+            {
+                return PartialView("InvalidCredentials");
+            }
             else
             {
-                return PartialView("Error", userModel);
+                return View("Error", userModel);
             }
         }
     }

@@ -6,6 +6,10 @@
         public string? Password { get; set; }
 
         public string? PasswordCheck { get; set; }
+
+        public string? InvalidCredentials { get; set;}
     }
 
 }
+
+

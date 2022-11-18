@@ -15,5 +15,10 @@ namespace E_Tutoring_Greame.Services
         {
             return SQL.AddUserToDatabase(user);
         }
+
+        public bool PasswordMatch(LoginModel user)
+        {
+            return SQL.CheckPasswords(user);
+        }
     }
 }

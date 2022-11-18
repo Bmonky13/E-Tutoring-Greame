@@ -1,5 +1,11 @@
 ﻿@model E_Tutoring_Greame.Models.LoginModel
-@using static E_Tutoring_Greame.SQL_C_Sharp.SQL
+@using static E_Tutoring_Greame.SQL_C_Sharp.SQL 
+@using static E_Tutoring_Greame.Services.Security_Services;
+@using Npgsql;
+@using System.Web;
+@using System.Web.Http;
+@using E_Tutoring_Greame.Services
+
 
 @{
     ViewData["Title"] = "Login";
@@ -14,6 +20,12 @@
       <div class="qstd m">
         <p>Login</p>
 
+        <p>
+            This is a partial view of address.
+        </p>
+        <p>
+                @Html.PartialAsync("_InvalidCredentials", Model.InvalidCredentials)
+        </p>
             <form asp-action="ProcessLogin">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="fixed">
@@ -29,7 +41,7 @@
         </div>
         <form asp-area="" asp-controller="Home" asp-action="SignUp">
             <div>
-                <input type="submit" value="Sign Up!" id="signUp" class="btn btnprimary" />
+                <input onclick="InvalidCredentials()" type="submit" value="Sign Up!" id="signUp" class="btn btnprimary" />
             </div>
         </form>
        
